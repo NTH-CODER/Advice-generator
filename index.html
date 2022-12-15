@@ -11,11 +11,19 @@
 
         <!-- custome css -->
         <link rel="stylesheet" href="style.css">
+
+        <!-- icons css -->
+        <link rel="stylesheet" href="Assets/icons/css/all.min.css">
     </head>
 
     <body class="dark">
         <!-- adive box -->
-        <div class="advice_box p-5 text-center">
+        <div class="advice_box p-5 text-center position-relative">
+            <!-- theme button -->
+            <button id="themeToggler" class="btn btn-primary position-absolute theme_btn">
+                <i class="far fa-lightbulb"></i>
+            </button>
+
             <div class="text-primary fs-5">
                 Advice: <span id="adviceId"></span>
             </div>
@@ -32,5 +40,6 @@
         </div>
 
         <script src="script.js"></script>
+        <script src="Assets/icons/js/all.min.js"></script>
     </body>
 </html>
