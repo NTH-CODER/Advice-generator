@@ -26,4 +26,14 @@ adviceRefreshBtn.onclick = ()=> {
 
 themeToggler.onclick = ()=> {
     bodyEl.classList.toggle('dark');
+
+    let icoBox = document.getElementById('icoBox');
+    
+    if(bodyEl.className === 'dark') {
+        icoBox.classList.add('far', 'fa-lightbulb');
+        icoBox.classList.remove('fa-moon');
+    } else {
+        icoBox.classList.add('far', 'fa-moon');
+        icoBox.classList.remove('fa-light-bulb');
+    }
 }

@@ -19,7 +19,7 @@ body.dark {
 }
 
 body {
-    background-color: rgba(127, 255, 212, 0.226);
+    background-color: white;
 }
 
 .advice_box {
@@ -30,6 +30,17 @@ body {
 .theme_btn {
     top: -5%;
     right: -5%;
+}
+
+@media screen and (max-width: 425px) {
+    .theme_btn {
+        top: 2%;
+        right: 2%;
+    }
+
+    .advice_box {
+        width: 95%;
+    }
 }
 
 body.dark .advice_box {
